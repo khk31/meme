@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meme by khk31</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Meme</h1>
+      <h2 class="project-tagline">Instructions and files for Genetics 303qc Presentation: The MEME Suite (31 March 2016)</h2>
+      <a href="https://github.com/khk31/meme" class="btn">View on GitHub</a>
+      <a href="https://github.com/khk31/meme/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/khk31/meme/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction:</h3>
+
+<p>The MEME Suite can be found at <a href="http://meme-suite.org/">http://meme-suite.org/</a>.</p>
+
+<p>Demonstration adapted from Bailey TL, Johnson J, Grant CE, Noble WS (2015) <a href="http://nar.oxfordjournals.org/content/43/W1/W39">The MEME Suite.</a> <em>Nucleic Acids Res</em> <strong>43</strong>(W1):W39-49</p>
+
+<h3>
+<a id="motif-discovery-using-meme" class="anchor" href="#motif-discovery-using-meme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motif Discovery using MEME:</h3>
+
+<p>On the <a href="http://meme-suite.org/tools/meme">MEME page</a>, upload a FASTA file containing amino acid sequences from five proteins, <a href="https://github.com/khk31/meme/blob/master/Hiller2004.1.fa">Hiller2004.1.fa</a>, under the <strong>Input the primary sequences</strong> section. In the <strong>Select the site distribution</strong> section, select <em>one occurrence per sequence</em>. In the <strong>Select the number of motifs</strong> section, tell MEME to find <em>1</em> motif. Click on the <strong>Advanced options</strong> section, and tell MEME to find motifs of <em>length 11</em> (select <em>11</em> for both the <em>Minimum width</em> and the <em>Maximum width</em>. Click <strong>Start Search</strong> to submit the job. When the job is completed, click <strong>MEME HTML output</strong> to view the <strong>Discovered Motif</strong>. You can click the arrow under <strong>More</strong> in the top row of the page to increase the size of the logo. </p>
+
+<h3>
+<a id="motif-scanning-using-mast" class="anchor" href="#motif-scanning-using-mast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motif Scanning using MAST:</h3>
+
+<p>You can submit the motif discovered through MEME in the previous step,  by clicking on the arrow under <strong>Submit/Download</strong> in the top row of the MEME HTML output page. Choose to <strong>Submit Motif</strong> to <strong>MAST</strong>; this brings you to the MAST page. The MAST page indicates that you'd submitted motifs (the <em>Submitted motifs</em> option is automatically selected in the <strong>Input the motifs</strong> section). Upload the <em>Plasmodium falciparum</em> proteome to MAST, by going to the <strong>Input the sequences</strong> section, selecting the <em>Upload sequences</em> option under the <strong><em>User supplied</em></strong> sub-heading in the drop-down menu and thereafter uploading a <a href="https://github.com/khk31/meme/blob/master/Plasmodium_falciparum.ASM276v1.24.pep.all.fa">FASTA file </a> containing amino acid sequences from the <em>Plasmodium falciparum</em> proteome. Click <strong>Start Search</strong> to submit the job. When the job is completed, click <strong>MAST HTML output</strong> to view the proteins within the <em>Plasmodium falciparum</em> proteome that contain the query motif, and the location of the query motif within each of these sequences in a block diagram format. You can hover your cursor over the blocks for more information.</p>
+
+<h3>
+<a id="motif-comparison-using-tomtom" class="anchor" href="#motif-comparison-using-tomtom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motif Comparison using Tomtom:</h3>
+
+<p>You can key in motifs manually (e.g., in plain text, or as matrices) in the <strong>Input query motifs</strong> section on the <a href="http://meme-suite.org//tools/tomtom">Tomtom page</a>. Try <strong>AAAGATCA</strong> (hover your cursor over the text box to see a logo representation of the motif). Leave all other settings at their default mode, and click <strong>Start Search</strong> to submit the job. Tomtom scans numerous databases containing, such as UniPROBE, JASPAR and CIS-BP. Notice how Tomtom aligns your query motif against the database motifs in the results page.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/khk31/meme">Meme</a> is maintained by <a href="https://github.com/khk31">khk31</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
